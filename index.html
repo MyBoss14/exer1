@@ -38,8 +38,6 @@
 
 } 
     
-document.getElementById('sumButton').addEventListener("click", displaySum);
-
   function displayProd() {
   let Number1 = Number1(document.getElementById('Number1').innerHTML)
   let Number2 = Number2(document.getElementById('Number2').innerHTML)
@@ -48,7 +46,7 @@ document.getElementById('sumButton').addEventListener("click", displaySum);
   document.getElementById("product").innerHTML = ` ${Number1} * ${Number2}, equals to ${total}` ;
 
 } 
-    
+document.getElementById('sumButton').addEventListener("click", displaySum);
 document.getElementById('prodButton').addEventListener("click", displayProd);
     
   </script>
