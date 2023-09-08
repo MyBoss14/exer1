@@ -30,8 +30,8 @@
     <input type="button" id="prodButton" value="Click to multiply!">
   
   <script>function displaySum() {
-  let Number1 = Number1(document.getElementById('Number1').innerHTML)
-  let Number2 = Number2(document.getElementById('Number2').innerHTML)
+  let Number1 = Number(document.getElementById('Number1').innerHTML)
+  let Number2 = Number(document.getElementById('Number2').innerHTML)
 
   let total = Number1 + Number2;
   document.getElementById("sum").innerHTML = ` ${Number1} + ${Number2}, equals to ${total}` ;
@@ -39,8 +39,8 @@
 } 
     
   function displayProd() {
-  let Number1 = Number1(document.getElementById('Number1').innerHTML)
-  let Number2 = Number2(document.getElementById('Number2').innerHTML)
+  let Number1 = Number(document.getElementById('Number1').innerHTML)
+  let Number2 = Number(document.getElementById('Number2').innerHTML)
 
   let total = Number1 + Number2;
   document.getElementById("product").innerHTML = ` ${Number1} * ${Number2}, equals to ${total}` ;
